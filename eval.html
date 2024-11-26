@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surveys and Forms</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <script src="./script.js" defer></script> -->
+     <script src="./test.js" defer></script>
+</head>
+<body>
+    <div class="header"> SET Questionnaire Page </div>
+  
+        <div class="information">
+            <div class="classNbr">
+                <div class="label"><strong>Class Number: </strong> <span class="info"></span></div>
+            </div>
+            <div class="courseID">
+                <div class="label"><strong>Course ID: </strong> <span class="info"></span></div>
+            </div>
+            <div class="subject">
+                <div class="label"><strong>Subject:</strong> <span class="info"></span></div>
+            </div>
+            <div class="description">
+                <div class="label"><strong>Description:</strong> <span class="info"></span></div>
+            </div>
+            <div class="instructor">
+                <div class="label"><strong>Instructor: </strong> <span class="info"></span></div>
+            </div>
+        </div>
+
+    </div>
+    <div id="page-content">
+    <div class="instructions">
+        <p><strong>STUDENT EVALUATION FOR TEACHING EFFECTIVENESS</strong></p>
+        <p>
+            <strong>INSTRUCTIONS FOR THE STUDENT</strong>: The Student Evaluation for Teaching Effectiveness (SET U.P.) is a useful source 
+            of information for assisting faculty in improving how they teach their courses. It describes teaching behaviors 
+            from the point of view of students. Your sincere and honest feedback is very much appreciated. Your responses 
+            will be anonymous and will not be linked to you as an individual.
+        </p>
+        <p>
+            Please read the following items carefully and rate the teaching effectiveness for this class according to the 
+            rating scale below:
+        </p>
+        <p>
+            1 = Almost never, 2 = Rarely, 3 = Sometimes, 4 = Frequently, 5 = Almost always, N/A = Not applicable
+        </p>
+    </div>
+    <form>
+        <table>
+            <thead>
+                <tr>
+                    <th class="question">In this class, the teacher:</th>
+                    <th>1</th>      <!--to enter align-->
+                    <th>2</th>      <!--to enter align-->
+                    <th>3</th>      <!--to enter align-->
+                    <th>4</th>      <!--to enter align-->
+                    <th>5</th>      <!--to enter align-->
+                    <th>N/A</th>  
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="question">Explains the objectives, expectations & various requirements of the course</td>
+                    <td><input type="radio" name="q1" value="1"></td>
+                    <td><input type="radio" name="q1" value="2"></td>
+                    <td><input type="radio" name="q1" value="3"></td>
+                    <td><input type="radio" name="q1" value="4"></td>
+                    <td><input type="radio" name="q1" value="5"></td>
+                    <td><input type="radio" name="q1" value="N/A"></td>
+                </tr>
+                <tr>
+                    <td class="question">Encourages students to think critically and/or creatively</td>
+                    <td><input type="radio" name="q2" value="1"></td>
+                    <td><input type="radio" name="q2" value="2"></td>
+                    <td><input type="radio" name="q2" value="3"></td>
+                    <td><input type="radio" name="q2" value="4"></td>
+                    <td><input type="radio" name="q2" value="5"></td>
+                    <td><input type="radio" name="q2" value="N/A"></td>
+                </tr>
+                <tr>
+                    <td class="question">Communicates clearly</td>
+                    <td><input type="radio" name="q3" value="1"></td>
+                    <td><input type="radio" name="q3" value="2"></td>
+                    <td><input type="radio" name="q3" value="3"></td>
+                    <td><input type="radio" name="q3" value="4"></td>
+                    <td><input type="radio" name="q3" value="5"></td>
+                    <td><input type="radio" name="q3" value="N/A"></td>
+                </tr>
+                <tr>
+                    <td class="question">Answers students questions clearly & adequately</td>
+                    <td><input type="radio" name="q4" value="1"></td>
+                    <td><input type="radio" name="q4" value="2"></td>
+                    <td><input type="radio" name="q4" value="3"></td>
+                    <td><input type="radio" name="q4" value="4"></td>
+                    <td><input type="radio" name="q4" value="5"></td>
+                    <td><input type="radio" name="q4" value="N/A"></td>
+                </tr>
+                <!-- Add more questions as needed -->
+                <tr>
+                    <td class="question">Is able to help students understand complex ideas related to the subject matter</td>
+                    <td><input type="radio" name="q5" value="1"></td>
+                    <td><input type="radio" name="q5" value="2"></td>
+                    <td><input type="radio" name="q5" value="3"></td>
+                    <td><input type="radio" name="q5" value="4"></td>
+                    <td><input type="radio" name="q5" value="5"></td>
+                    <td><input type="radio" name="q5" value="N/A"></td>
+                </tr>
+                <tr>
+                    <td class="question">Uses engaging and helpful learning exercises and activities</td>
+                    <td><input type="radio" name="q6" value="1"></td>
+                    <td><input type="radio" name="q6" value="2"></td>
+                    <td><input type="radio" name="q6" value="3"></td>
+                    <td><input type="radio" name="q6" value="4"></td>
+                    <td><input type="radio" name="q6" value="5"></td>
+                    <td><input type="radio" name="q6" value="N/A"></td>
+                </tr>
+                <tr>
+                    <td class="question">Relates the subject matter to issues and developments in the discipline and real life concerns</td>
+                    <td><input type="radio" name="q7" value="1"></td>
+                    <td><input type="radio" name="q7" value="2"></td>
+                    <td><input type="radio" name="q7" value="3"></td>
+                    <td><input type="radio" name="q7" value="4"></td>
+                    <td><input type="radio" name="q7" value="5"></td>
+                    <td><input type="radio" name="q7" value="N/A"></td>
+                </tr>
+                <tr>
+                    <td class="question">Encourages students to participate in discussions and activities</td>
+                    <td><input type="radio" name="q8" value="1"></td>
+                    <td><input type="radio" name="q8" value="2"></td>
+                    <td><input type="radio" name="q8" value="3"></td>
+                    <td><input type="radio" name="q8" value="4"></td>
+                    <td><input type="radio" name="q8" value="5"></td>
+                    <td><input type="radio" name="q8" value="N/A"></td>
+                </tr>
+                <tr>
+                    <td class="question">Makes himself or herself available for consultation</td>
+                    <td><input type="radio" name="q9" value="1"></td>
+                    <td><input type="radio" name="q9" value="2"></td>
+                    <td><input type="radio" name="q9" value="3"></td>
+                    <td><input type="radio" name="q9" value="4"></td>
+                    <td><input type="radio" name="q9" value="5"></td>
+                    <td><input type="radio" name="q9" value="N/A"></td>
+                </tr>
+                <tr>
+                    <td class="question">Encourages students to express their ideas and viewpoints</td>
+                    <td><input type="radio" name="q10" value="1"></td>
+                    <td><input type="radio" name="q10" value="2"></td>
+                    <td><input type="radio" name="q10" value="3"></td>
+                    <td><input type="radio" name="q10" value="4"></td>
+                    <td><input type="radio" name="q10" value="5"></td>
+                    <td><input type="radio" name="q10" value="N/A"></td>
+                </tr>
+                <tr>
+                    <td class="question">Communicates and interacts with students in a positive way</td>
+                    <td><input type="radio" name="q11" value="1"></td>
+                    <td><input type="radio" name="q11" value="2"></td>
+                    <td><input type="radio" name="q11" value="3"></td>
+                    <td><input type="radio" name="q11" value="4"></td>
+                    <td><input type="radio" name="q11" value="5"></td>
+                    <td><input type="radio" name="q11" value="N/A"></td>
+                </tr>
+                <tr>
+                    <td class="question">Shows respect for student diversity and individual differences</td>
+                    <td><input type="radio" name="q12" value="1"></td>
+                    <td><input type="radio" name="q12" value="2"></td>
+                    <td><input type="radio" name="q12" value="3"></td>
+                    <td><input type="radio" name="q12" value="4"></td>
+                    <td><input type="radio" name="q12" value="5"></td>
+                    <td><input type="radio" name="q12" value="N/A"></td>
+                </tr>
+                <tr>
+                    <td class="question">Makes full use of the required hours for learning</td>
+                    <td><input type="radio" name="q13" value="1"></td>
+                    <td><input type="radio" name="q13" value="2"></td>
+                    <td><input type="radio" name="q13" value="3"></td>
+                    <td><input type="radio" name="q13" value="4"></td>
+                    <td><input type="radio" name="q13" value="5"></td>
+                    <td><input type="radio" name="q13" value="N/A"></td>
+                </tr>
+                <tr>
+                    <td class="question">Provides fair and timely feedback on student performances</td>
+                    <td><input type="radio" name="q14" value="1"></td>
+                    <td><input type="radio" name="q14" value="2"></td>
+                    <td><input type="radio" name="q14" value="3"></td>
+                    <td><input type="radio" name="q14" value="4"></td>
+                    <td><input type="radio" name="q14" value="5"></td>
+                    <td><input type="radio" name="q14" value="N/A"></td>
+                </tr>
+                <tr>
+                    <td class="question">Uses clear criteria to evaluate student performance</td>
+                    <td><input type="radio" name="q15" value="1"></td>
+                    <td><input type="radio" name="q15" value="2"></td>
+                    <td><input type="radio" name="q15" value="3"></td>
+                    <td><input type="radio" name="q15" value="4"></td>
+                    <td><input type="radio" name="q15" value="5"></td>
+                    <td><input type="radio" name="q15" value="N/A"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="margin-top: 20px; font-weight: bold;">Please also answer the ff questions:</div>
+        <div>
+            <p>1. In relation to your learning experience <strong>in this class</strong>, what does your teacher do that you find very helpful/effective?</p>
+            <textarea name="q_open1" rows="6" cols="90"></textarea>
+        </div>
+        <div> 
+            <p>2. How do you think can the teaching in this class be improved to enhance your learning experience?</p>
+            <textarea name="q_open2" rows="6" cols="90"></textarea>
+        </div>
+        <div class="button-container">
+            <button type="submit">SUBMIT</button>
+            <button type="button" onclick="redirectToIndex()">CANCEL</button>
+        </div>
+        <p style="text-align: center; margin-top: 20px;">Thank you very much!</p>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="./script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surveys and Forms</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <script src="./script.js" defer></script> -->
+     <script src="./test.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <h1>University of the Philippines</h1>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Menu</h3>
+            <ul>
+      
+                <li><a href="#">Student Evaluation of Teaching</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h2>Surveys and Forms</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Evaluate</th>
+                        <th>Class Nbr</th>
+                        <th>Course ID</th>
+                        <th>Class Section</th>
+                        <th>Subject</th>
+                        <th>Description</th>
+                        <th>Instructor</th>
+                        <th>Schedule</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><button class="evaluate-button" onclick="forwardDataStorage(1001, '1','A','CMSC 100', 'Intro to Programming', 'Torvalds, Linus', '12:00PM - 01:00PM (WedFri)')">Evaluate</button></td>
+                        <td class="classNbr">1001</td>
+                        <td class="courseID">1</td>
+                        <td class="section">A</td>
+                        <td class="subject">CMSC 100</td>
+                        <td class="description">Intro to Programming</td>
+                        <td class="instructor">Torvalds, Linus</td>
+                        <td class="schedule">12:00PM - 01:00PM (WedFri)</td>
+                    </tr>
+                    <tr>
+                        <td><button class="evaluate-button" onclick="forwardDataStorage(1002,'2','A', 'CMSC 101', 'Databases', 'Lovelace, Ada', '01:30PM - 03:00PM (WedFri)')">Evaluate</button></td>
+                        <td class="classNbr">1002</td>
+                        <td class="courseID">2</td>
+                        <td class="section">A</td>
+                        <td class="subject">CMSC 101</td>
+                        <td class="description">Databases</td>
+                        <td class="instructor">Lovelace, Ada</td>
+                        <td class="schedule">01:30PM - 03:00PM (WedFri)</td>
+                    </tr>
+                    <tr>
+                        <td><button class="evaluate-button" onclick="forwardDataStorage(1003,'3','B', 'CMSC 102', 'Cryptography', 'Doe, John', '6:00 PM - 07:30PM (WedFri)')">Evaluate</button></td>
+                        <td class="classNbr">1003</td>
+                        <td class="courseID">3</td>
+                        <td class="section">B</td>
+                        <td class="subject">CMSC 102</td>
+                        <td class="description">Cryptography</td>
+                        <td class="instructor">Doe, John</td>
+                        <td class="schedule">6:00 PM - 07:30PM (WedFri)</td>
+                    </tr>
+                    <tr>
+                        <td><button class="evaluate-button" onclick="forwardDataStorage(1004,'4','D', 'CMSC 103', 'Operating Systems', 'Hopper, Grace', '09:00AM - 10:30AM (TueThu)')">Evaluate</button></td>
+                        <td class="classNbr">1004</td>
+                        <td class="courseID">4</td>
+                        <td class="section">D</td>
+                        <td class="subject">CMSC 103</td>
+                        <td class="description">Operating Systems</td>
+                        <td class="instructor">Hopper, Grace</td>
+                        <td class="schedule">09:00AM - 10:30AM (TueThu)</td>
+                    </tr>
+                    <tr>
+                        <td><button class="evaluate-button" onclick="forwardDataStorage(1005, '5', 'E','CMSC 104', 'Computer Networks', 'Berners-Lee, Tim', '01:00PM - 02:30PM (MonWed)')">Evaluate</button></td>
+                        <td class="classNbr">1005</td>
+                        <td class="courseID">5</td>
+                        <td class="section">E</td>
+                        <td class="subject">CMSC 104</td>
+                        <td class="description">Computer Networks</td>
+                        <td class="instructor">Berners-Lee, Tim</td>
+                        <td class="schedule">01:00PM - 02:30PM (MonWed)</td>
+                    </tr>
+                    <tr>
+                        <td><button class="evaluate-button" onclick="forwardDataStorage(1006,'6','F', 'CMSC 105', 'Machine Learning', 'Ng, Andrew','03:00PM - 04:30PM (WedFri)')">Evaluate</button></td>
+                        <td class="classNbr">1006</td>
+                        <td class="courseID">6</td>
+                        <td class="section">F</td>
+                        <td class="subject">CMSC 105</td>
+                        <td class="description">Machine Learning</td>
+                        <td class="instructor">Ng, Andrew</td>
+                        <td class="schedule">03:00PM - 04:30PM (WedFri)</td>
+                    </tr>
+                    <tr>
+                        <td><button class="evaluate-button" onclick="forwardDataStorage(1007, '7', 'G', 'CMSC 106', 'Artificial Intelligence', 'McCarthy, John', '11:00AM - 12:30PM (TueThu)')">Evaluate</button></td>
+                        <td class="classNbr">1007</td>
+                        <td class="courseID">7</td>
+                        <td class="section">G</td>
+                        <td class="subject">CMSC 106</td>
+                        <td class="description">Artificial Intelligence</td>
+                        <td class="instructor">McCarthy, John</td>
+                        <td class="schedule">11:00AM - 12:30PM (TueThu)</td>
+                    </tr>
+                    <tr>
+                        <td><button class="evaluate-button" onclick="forwardDataStorage(1008, '8', 'H', 'CMSC 107', 'Cybersecurity', 'Mitnick, Kevin', '04:00PM - 05:30PM (MonWed)')">Evaluate</button></td>
+                        <td class="classNbr">1008</td>
+                        <td class="courseID">8</td>
+                        <td class="section">H</td>
+                        <td class="subject">CMSC 107</td>
+                        <td class="description">Cybersecurity</td>
+                        <td class="instructor">Mitnick, Kevin</td>
+                        <td class="schedule">04:00PM - 05:30PM (MonWed)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
